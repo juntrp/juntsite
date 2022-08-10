@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JuntRp | Контент</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <style>
+          body {
+            background-color: rgb(43, 43, 43);
+          }
+          @font-face {
+            font-family: Minecraft;
+            src: url("minecraft.ttf");
+          }
+        }
+          .head {
+            text-align: center;
+
+          }
+          h5 {
+            font-family: Minecraft;
+            color: white;
+            margin-top: 1%;
+            text-align: right;
+          }
+          .head .navbar {
+            --bs-navbar-active-color: rgb(255, 255, 255);
+            --bs-navbar-brand-color: rgb(255, 255, 255);
+            --bs-navbar-color: rgb(204, 204, 204);
+            --bs-navbar-hover-color: rgb(255, 255, 255);
+            --bs-navbar-brand-hover-color: rgb(255, 255, 255);
+            font-family: Minecraft;
+            font-size: 18px;
+          }
+
+          .navbar-brand {
+            cursor: copy;
+          }
+
+          .head .nav-item {
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+          }
+          .head .nav-item:hover {
+            text-decoration: underline solid 2px;
+            text-underline-offset: 10px;
+            margin-top: -0.5%;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+          }
+          .head .nav-link.active {
+            text-decoration: underline solid 2px;
+            text-underline-offset: 10px;
+          }
+          .head .navbar-toggler {
+            border-width: 0;
+          }
+          .head .navbar-toggler:after {
+            border-width: 0;
+          }
+          .head .navbar-toggler:active {
+            border-width: 0;
+          }
+          .buy {
+        font-family: Minecraft;
+        background-color: rgb(246, 171, 11);
+        border-radius: 10px;
+        border-width: 0;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        cursor: pointer;
+      }
+      .buy:hover {
+        font-family: Minecraft;
+        background-color: rgb(228, 157, 2);
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+      .modal-title {
+        color: black;
+      }
+      img.head {
+          width: 99%;
+          margin-left: 0.5%;
+        }
+        .alert {
+          width: 90%;
+          margin-left: 5%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            id="text"
+            onclick="copyToClipboard('#text')"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-title="Скопировать"
+            >mc.juntrp.ru</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Rules"
+                  >Правила</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#Sostav">Состав</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  target="_blank"
+                  href="https://discord.gg/nZ9eXVvyHt"
+                >
+                  Дискорд</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="content.html"> Контент</a>
+              </li>
+              <!-- developer ignatka -->
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://ignatka.ml">
+                  Разработчик</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="images/Rectangle 1.png" class="head" style="margin-top: -2%" />
+    </div>
+    <div class="main">
+      <div class="alert alert-danger" role="alert">
+        Эта страница в разработке<br />Здесь будет информация о всём контенте на
+        сервере.
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="Rules"
+      tabindex="-1"
+      aria-labelledby="Rules"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Правила</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <b>Основные термины:</b><br />
+            <b>Role-Play (RP)</b> - Игра по ролям, действия которые вы делаете в
+            реальной жизни. <br />
+            <b>OOC</b> - Всё, что касается реального мира. НонРп информация<br />
+            <b> IC</b> - Всё, что касается виртуального мира <br />
+            <b>Green Zone (GZ)</b>- Безопасная зона/зона спавна<br />
+            <br />
+            --------------------------------------------------<br />
+            <br />
+            Правила:<br />
+            <b>NonRp</b> - Неадекватное поведение. Так как бы вы не вели себя в
+            реальной жизни. Наказание - 500 сек ареста <br />
+            <b>FearRp</b> - Небоязнь за свою жизнь. Например: на Вас наставили
+            пистолет но вы всеравно убегаете. Или бить человека битой, при том
+            что у него оружие намного лучше. Наказание 300сек
+            <br />
+            <b>RDM</b> - Беспричинное убийство 1 или 2 человек. Наказание 600сек
+            <br />
+            <b>FreeDamage</b> - Запрещено наносить дамаг игроку на 5 или более
+            ХП без причины. Наказание 100сек<br />
+            <b> MassRDM </b>- Беспричинное убийство 3 и более человек. Наказание
+            1000сек <br />
+            <b>NLR</b> - Запрещено возвращаться на место своей смерти в течение
+            2ух минут, а также вы обязаны забыть любую информацию из вашей
+            прошлой жизни включая имя/адрес убийцы также запрещено мстить своему
+            убийце. [Исключение: место жительства]. Наказание 300сек <br />
+            <b>JobAbuse</b> - Смена профессии с целью получения выгоды.
+            Например: в перестрелке с копами человек взял медика и вылечил своих
+            товарищей. Наказание 400сек<br />
+            <b>FreeArest</b> - Беспричинный арест любого игрока. Наказание
+            300сек <br />
+            <b>FreeWarrant</b> - Беспричинный обыск дома игрока. Наказание
+            300сек <br />
+            <b>MetaGaming </b>- Запрещено использование OOC информацию в IC.
+            Например: Вася сообщил в общий чат, что у него дома 5 заложников, а
+            через минут за его дверью собралась вся полиция сервера. Наказание
+            500сек<br />
+            <b>FreeWanted</b> - Беспричинная подача игрока в розыск. Наказание
+            300сек <br />
+            <b>GreenZoneAbuse</b> - Использование зоны спавна от ухода от
+            наказания. Например: полицейский Миша догонял Васю, но Вася быстро
+            спрятался в метро где его точно не изобьют. Наказание 200сек
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buy" data-bs-dismiss="modal">
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
