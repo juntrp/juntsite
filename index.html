@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JuntRp | Вебсайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <style>
+      body {
+        background-color: rgb(43, 43, 43);
+      }
+      @font-face {
+        font-family: Minecraft;
+        src: url("minecraft.ttf");
+      }
+      @media screen and (max-width: 1920px) {
+        img.head {
+          width: 99%;
+        }
+      }
+      .head {
+        text-align: center;
+
+      }
+      h5 {
+        font-family: Minecraft;
+        color: white;
+        margin-top: 1%;
+        text-align: right;
+      }
+      .head .navbar {
+        --bs-navbar-active-color: rgb(255, 255, 255);
+        --bs-navbar-brand-color: rgb(255, 255, 255);
+        --bs-navbar-color: rgb(204, 204, 204);
+        --bs-navbar-hover-color: rgb(255, 255, 255);
+        --bs-navbar-brand-hover-color: rgb(255, 255, 255);
+        font-family: Minecraft;
+        font-size: 18px;
+      }
+
+      .navbar-brand {
+        cursor: copy;
+      }
+
+      .head .nav-item {
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+      .head .nav-item:hover {
+        text-decoration: underline solid 2px;
+        text-underline-offset: 10px;
+        margin-top: -0.5%;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+      .head .nav-link.active {
+        text-decoration: underline solid 2px;
+        text-underline-offset: 10px;
+      }
+      .head .navbar-toggler {
+        border-width: 0;
+      }
+      .head .navbar-toggler:after {
+        border-width: 0;
+      }
+      .head .navbar-toggler:active {
+        border-width: 0;
+      }
+
+      .main {
+        color: white;
+        font-family: Minecraft;
+        margin-left: 5%;
+        margin-top: 3%;
+        position: relative;
+      }
+      .main h2 {
+        color: rgb(246, 171, 11);
+      }
+      .description {
+        color: rgb(213, 213, 213);
+      }
+      .hui {
+        font-size: 25px;
+      }
+      
+      /* картиночка справа  */
+      @media screen and (max-width: 2400px) {
+        .piska {
+          margin-top: -10%;
+          margin-left: 80.6%;
+        }
+      }
+
+      @media screen and (max-width: 1919px) {
+        .piska {
+          margin-top: -10%;
+          margin-left: 77.8%;
+        }
+      }
+      @media screen and (max-width: 1649px) {
+        .piska {
+          margin-top: -10%;
+          margin-left: 77.8%;
+        }
+      }
+      @media screen and (max-width: 1600px) {
+        .piska {
+          margin-top: -10%;
+          margin-left: 76.6%;
+        }
+      }
+      @media screen and (max-width: 1440px) {
+        .piska {
+          top: 60%;
+          margin-left: 74%;
+        }
+      }
+      @media screen and (max-width: 1280px) {
+        .piska {
+          top: 60%;
+          margin-left: 68.3%;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .piska {
+          top: 60%;
+          margin-left: 65%;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .piska {
+          width: 0px;
+        }
+      }
+
+
+      /* конец картиночки справа  */
+      /* размер текста описания  */
+
+      @media screen and (max-width: 1920px) {
+        .description {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 1650px) {
+        .description {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 1280px) {
+        .description {
+          font-size: 17px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .description {
+          font-size: 17px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .description {
+          font-size: 12px;
+        }
+      }
+
+      /* конец описания  */
+
+      .carousel {
+        size: 20%;
+      }
+
+      /* начало скриншота  */
+
+      @media screen and (max-width: 1920px) {
+        .screen {
+          margin-top: -12%;
+          width: 320px;
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        .screen {
+          margin-top: -14%;
+          width: 300px;
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        .screen {
+          margin-top: -14%;
+          width: 200px;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .screen {
+          margin-top: 0%;
+          width: 0px;
+        }
+      }
+
+      /* конец скрина  */
+
+      /* настройка "Приобрести донат" */
+      @media screen and (max-height: 1600px) {
+        .donateHUI {
+          margin-top: 1%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 1400px) {
+        .donateHUI {
+          margin-top: 1%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 1300px) {
+        .donateHUI {
+          margin-top: 2%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 1300px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 65%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 1100px) {
+        .donateHUI {
+          margin-top: 5%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 1100px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 30%;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-height: 1000px) {
+        .donateHUI {
+          margin-top: 70%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 950px) {
+        .donateHUI {
+          margin-top: 4%;
+          text-align: center;
+        }
+      }
+      @media screen and (max-height: 950px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 76%;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-height: 800px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 72%;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-height: 730px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 40%;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-height: 700px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 30%;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-height: 500px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 9%;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-height: 300px) and (max-width: 1000px) {
+        .donateHUI {
+          margin-top: 7%;
+          text-align: center;
+          font-size: 10px;
+        }
+      }
+
+      /* конец настройки письки к донату  */
+    
+      table {width: 100%; border-spacing: 0; height: 900px; margin-top: 2%;}
+      tr { background: #494949}
+      .row {
+        width: 70%;
+        margin-left: 15%;
+      }
+      .card-title {
+        color:#000000;
+        margin-right: 10%;
+        font-size: 23px;
+      }
+      .card-text {
+        font-family: Minecraft;
+      }
+      .card {
+        margin-top: 4%;
+      }
+
+      .sostav {
+        margin-top: -6%;
+      }
+
+      .sostav1 {
+        font-family: Minecraft;
+      }
+      .sostav1 .card {
+        margin-left: 2%;
+      }
+
+      .container {
+        margin-top: 2%;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+
+/* подвал  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-top: 15%;
+  font-family: Minecraft;
+}
+.footer a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.footer .col ul a:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: auto;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+    .buy {
+      font-family: Minecraft;
+      background-color: rgb(246, 171, 11);
+      border-radius: 10px;
+      border-width: 0;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      cursor: pointer;
+    }
+    .buy:hover {
+      font-family: Minecraft;
+      background-color: rgb(228, 157, 2);
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      text-decoration: none;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+    }
+    .modal-title {
+      color: black;
+    }
+    .donmenu {
+  margin-top: 2%;
+  font-family: Minecraft;
+  border-radius: 40px 40px;
+  border-width: 0px;
+  border-style: solid;
+  width: 100%;
+  color: rgb(0, 0, 0) !important;
+  border-color: rgb(165, 165, 165) !important;
+  transition: 0.3s;
+  background-color: rgb(165, 165, 165, 0) !important;
+}
+.trademc-buyform-button {
+      font-family: Minecraft;
+      background-color: rgb(246, 171, 11) !important;
+      border-radius: 10px !important;
+      border-width: 0 !important;
+      color: white !important;
+      padding: 10px !important;
+      text-decoration: none !important;
+      -webkit-transition: .2s !important;
+      -moz-transition: .2s !important;
+      cursor: pointer !important;
+}
+
+.trademc-buyform-button:hover {
+      font-family: Minecraft;
+      background-color: rgb(233, 160, 2) !important;
+      border-radius: 10px !important;
+      border-width: 0 !important;
+      color: white !important;
+      padding: 10px !important;
+      text-decoration: none !important;
+      -webkit-transition: .2s !important;
+      -moz-transition: .2s !important;
+      cursor: pointer !important;
+}
+
+.direct {
+  /* font-family: "Montserrat", sans-serif;*/
+  font-family: "Dosis", sans-serif;
+  font-size: 150%;
+  border-radius: 10px 10px;
+  margin-bottom: 3%;
+  border-width: 0px;
+  border-style: solid;
+  padding: 15px;
+  width: 90%;
+  color: rgb(13, 13, 13) !important;
+  border-color: rgb(165, 165, 165) !important;
+  transition: 0.3s;
+  background-color: rgb(228, 228, 228) !important;
+}
+
+.direct button {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0;
+  border-radius: 60px 60px;
+}
+
+.direct b {
+  font-family: Minecraft;
+}
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="text" onclick="copyToClipboard('#text')" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Скопировать">mc.juntrp.ru</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/" 
+                data-bs-toggle="modal"
+                data-bs-target="#Rules">Правила</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Sostav">Состав</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://discord.gg/nZ9eXVvyHt">
+                 Дискорд</a>
+              </li>
+              <!-- developer ignatka -->
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://ignatka.ml">
+                 Разработчик</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="images/Rectangle 1.png" class="head" style="margin-top: -2%" />
+    </div>
+    <div class="main">
+      <h2>JuntRp - RolePlay в майнкрафте</h2>
+      <p class="description">
+        У нас есть уникальные автоматизированные системы фракций, ОПГ,
+        полиции.<br />
+        Уникальная работа почтальона, а также урны в которых можно найти от<br />
+        простой плоти до настоящих денег. На сервере вы сможете встретить 18+<br />
+        контент, купить машину, отбиваться от рейдов полиции, заказать себе<br />
+        разные штучки по почте, и это не всё! Заходи и исследуй карту Российского
+        городка сам. <br />
+        <p class="hui"> IP: mc.juntrp.ru <p>Онлайн: <span id="player-count"></span></p></p>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        let ip = "mc.juntrp.ru";
+
+        // server playercount
+        $.get("https://mcapi.us/server/status?ip=" + ip, function (res) {
+          if (res.status !== "success") return null;
+          $("#player-count").html(res.players.now);
+        });
+      </script>
+      </p>
+      <img class="piska" src="images/Img.png" width="350px"/>
+      <img src="images/meAnd.png" alt="Скриншот с сервера" class="screen">
+    </div>
+    <div class="donateHUI">
+      <h5 style="text-align: center;">Приобрести донат</h5>
+      <div style="text-align: center;"><img src="images/yaGHUI.png" width="60px" class="bladtakestrelkainjuntrpsiteandFreeVzlomHuiPiskazeroAdventure-gq"></div>
+    </div>
+    <div class="donatemodule" id="Donate">
+      <table>
+        <tr>
+         <td>
+          <div class="huina">
+          <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="images/trade.jpg" class="card-img-top" alt="TradeMc">
+              <div class="card-body">
+                <h5 class="card-title">Оплатить с помощью TradeMc <img src="images/trademc.png" width="25px"></h5>
+                <p class="card-text">С комиссией, приходит сразу.</p> 
+                <a data-bs-toggle="modal"
+                data-bs-target="#TradeMc" class="buy">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="images/st.png" class="card-img-top" alt="Sber & Tinkoff">
+              <div class="card-body">
+                <h5 class="card-title">Напрямую <img src="images/sber.png" width="25px"><img src="images/tinkoff.png" width="25px"></h5>
+                <p class="card-text">Без комиссии, приходит в течение 24ч.</p>
+                <a data-bs-toggle="modal"
+                data-bs-target="#Direct" class="buy">Купить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></td> 
+        </tr>
+        
+       </table>
+       <div class="sostav" id="Sostav">
+        <h5 style="text-align: center;">Состав проекта</h5>
+        <div style="text-align: center;"><img src="images/yaGHUI.png" width="60px" class="bladtakestrelkainjuntrpsiteandFreeVzlomHuiPiskazeroAdventure-gq"></div>
+      </div>
+    </div>
+    <!-- Состав  -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+        <!-- Начало карты -->
+        <div class="col">
+          <div class="card">
+            <img src="images/skovorodka232.png" class="card-img-top" alt="Фото" />
+            <div class="card-body">
+              <h5 class="card-title">skovorodka232</h5>
+              <p class="card-text" style="color:rgb(255, 96, 96);">
+                Developer
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- канец -->
+        <!-- Начало карты -->
+        <div class="col">
+          <div class="card">
+            <img src="images/gazirovka.png" class="card-img-top" alt="Фото" />
+            <div class="card-body">
+              <h5 class="card-title">gazirovka</h5>
+              <p class="card-text" style="color:rgb(130, 255, 96);">
+                Administrator
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- канец -->
+        <!-- Начало карты -->
+        <div class="col">
+          <div class="card">
+            <img src="images/debilKrut.png" class="card-img-top" alt="Фото" />
+            <div class="card-body">
+              <h5 class="card-title">debilKrut</h5>
+              <p class="card-text" style="color:rgb(130, 255, 96);">
+                Administrator
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- канец -->
+    </div>
+    <!-- Состав конец -->
+
+    <!-- Modals начало  -->
+
+            <!-- Modal -->
+            <div
+            class="modal fade"
+            id="Rules"
+            tabindex="-1"
+            aria-labelledby="Rules"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Правила</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <b>Основные термины:</b><br />
+                  <b>Role-Play (RP)</b> - Игра по ролям, действия которые вы
+                  делаете в реальной жизни. <br />
+                  <b>OOC</b> - Всё, что касается реального мира. НонРп
+                  информация<br />
+                  <b> IC</b> - Всё, что касается виртуального мира <br />
+                  <b>Green Zone (GZ)</b>- Безопасная зона/зона спавна<br />
+                  <br />
+                  --------------------------------------------------<br />
+                  <br />
+                  Правила:<br />
+                  <b>NonRp</b> - Неадекватное поведение. Так как бы вы не вели
+                  себя в реальной жизни. Наказание - 500 сек ареста <br />
+                  <b>FearRp</b> - Небоязнь за свою жизнь. Например: на Вас
+                  наставили пистолет но вы всеравно убегаете. Или бить человека
+                  битой, при том что у него оружие намного лучше. Наказание 300сек
+                  <br />
+                  <b>RDM</b> - Беспричинное убийство 1 или 2 человек. Наказание
+                  600сек <br />
+                  <b>FreeDamage</b> - Запрещено наносить дамаг игроку на 5 или
+                  более ХП без причины. Наказание 100сек<br />
+                  <b> MassRDM </b>- Беспричинное убийство 3 и более человек.
+                  Наказание 1000сек <br />
+                  <b>NLR</b> - Запрещено возвращаться на место своей смерти в
+                  течение 2ух минут, а также вы обязаны забыть любую информацию из
+                  вашей прошлой жизни включая имя/адрес убийцы также запрещено
+                  мстить своему убийце. [Исключение: место жительства]. Наказание
+                  300сек <br />
+                  <b>JobAbuse</b> - Смена профессии с целью получения выгоды.
+                  Например: в перестрелке с копами человек взял медика и вылечил
+                  своих товарищей. Наказание 400сек<br />
+                  <b>FreeArest</b> - Беспричинный арест любого игрока. Наказание
+                  300сек <br />
+                  <b>FreeWarrant</b> - Беспричинный обыск дома игрока. Наказание
+                  300сек <br />
+                  <b>MetaGaming </b>- Запрещено использование OOC информацию в IC.
+                  Например: Вася сообщил в общий чат, что у него дома 5
+                  заложников, а через минут за его дверью собралась вся полиция
+                  сервера. Наказание 500сек<br />
+                  <b>FreeWanted</b> - Беспричинная подача игрока в розыск.
+                  Наказание 300сек <br />
+                  <b>GreenZoneAbuse</b> - Использование зоны спавна от ухода от
+                  наказания. Например: полицейский Миша догонял Васю, но Вася
+                  быстро спрятался в метро где его точно не изобьют. Наказание
+                  200сек
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="buy"
+                    data-bs-dismiss="modal"
+                  >
+                    Закрыть
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="trade">
+            <div
+              class="modal fade"
+              id="TradeMc"
+              tabindex="-1"
+              aria-labelledby="TradeMc"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Покупка через TradeMc
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <button class="donmenu">
+                      <div class="donate">
+                        <script src="https://api.trademc.org/trademcapi.js"></script>
+                        <div id="trademc-buyform"></div>
+                        <script>
+                          TrademcAPI.GetBuyForm({
+                            Shop: "157536",
+                            Title: "Купить донат",
+                            Nickname: "Введите ваш никнейм",
+                            Item: "Выберите товар",
+                            Coupon: "Введите купон, если есть",
+                            Button: "Продолжить",
+                            Success_URL: "https://krenmc.cyou/",
+                            Pending_URL: "https://trademc.org",
+                            Fail_URL: "https://trademc.org",
+                            PastPlaceID: "trademc-buyform",
+                          });
+                        </script>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="modal-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trade ru">
+            <div
+              class="modal fade"
+              id="Direct"
+              tabindex="-1"
+              aria-labelledby="Direct"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Купить напрямую
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <b>Покупка напрямую происходит следующим образом:</b> <br />
+                    1) Вы скидываете деньги на карту (Реквизиты в конце) <br />
+                    2) В сообщении отправки денег пишите свой ник и тип доната
+                    (Vip/JC) <br />
+                    3) Если оплата прошла успешно администратор выдаст вам донат в
+                    течение 24ч<br />
+                    <br />
+                    <b>Реквизиты:</b><br />
+                    <br />
+                    <div class="direct">
+                      Сбербанк:
+                      <b> 5336690346041603 </b>
+                      <br /><br />
+                      Тинькофф:<b> 4377727814740614</b><br />
+                    </div>
+                    Пожалуйста сохраняйте чек!
+                  </div>
+                  <div class="modal-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+
+
+    <!-- подвал -->
+<div class="footer">
+  <img src="images/Rectangle 1.png" class="head" style="margin-top: -5%;"/>
+  <div class="contain">
+  <div class="col">
+    <h1>JuntRp</h1>
+    <ul>
+      <a href="/"><li>О нас</a></li></a>
+      <a href="#Donate"><li>Донат</a></li></a>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Свяжитесь с нами
+    </h1>
+    <ul>
+      <li><a href="https://dsc.gg/juntrp" target="_blank">dsc.gg/juntrp</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li><img src="images/tinkoff1.png" width="100"></li>
+    </ul>
+  </div>
+  <div class="col" style="margin-left: -10%; margin-top: -2%;">
+    <ul>
+      <li><img src="images/visa.svg" width="150"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- конец подвал -->
+    <script>
+      console.log("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+      console.log("░░███░░███░██░░░█░░██░░███░█░█░░██░░░░██░██░█░░░░");
+      console.log("░░░█░░█░░█░█░█░░█░█░░█░░█░░█░█░█░░█░░░█░█░█░█░░░░");
+      console.log("░░░█░░░███░█░░█░█░████░░█░░██░░████░░░█░░░█░█░░░░");
+      console.log("░░░█░░░░░█░█░░█░█░█░░█░░█░░█░█░█░░█░░░█░░░█░█░░░░");
+      console.log("░░███░████░█░░░██░█░░█░░█░░█░█░█░░█░█░█░░░█░████░");
+      console.log("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+    </script>
+<script>
+  function copyToClipboard(element) {
+    var $temp = $("<input>");+
+
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  </body>
+</html>
+
+<!-- Разработчик сайта: https://ignatka.ml -->
+
+<!-- 
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░███░░███░██░░░█░░██░░███░█░█░░██░░░░██░██░█░░░░
+░░░█░░█░░█░█░█░░█░█░░█░░█░░█░█░█░░█░░░█░█░█░█░░░░
+░░░█░░░███░█░░█░█░████░░█░░██░░████░░░█░░░█░█░░░░
+░░░█░░░░░█░█░░█░█░█░░█░░█░░█░█░█░░█░░░█░░░█░█░░░░
+░░███░████░█░░░██░█░░█░░█░░█░█░█░░█░█░█░░░█░████░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
